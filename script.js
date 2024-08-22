@@ -1,6 +1,6 @@
 const time = 1000
 function getRandomNumber() {
-    return Math.floor(Math.random() * 10) + 1;
+    return Math.floor(Math.random() * 12) + 1;
 }
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
