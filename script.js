@@ -1,4 +1,4 @@
-const time = 1000
+const time = 2000
 function getRandomNumber() {
     return Math.floor(Math.random() * 12) + 1;
 }
