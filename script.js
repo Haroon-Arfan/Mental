@@ -30,3 +30,16 @@ function executeOnKeyPress(event) {
 
 // Add an event listener for keydown events on the document
 document.addEventListener("keydown", executeOnKeyPress);
+
+// Function to execute when the screen is touched
+        function executeOnTouch(event) {
+            number1 = getRandomNumber();
+        number2 = getRandomNumber();
+        number3 = work(number1, number2);
+        document.getElementById('number1').innerText = number1;
+        document.getElementById('number2').innerText = number2;
+        sleep(time).then(() => { document.getElementById('number3').innerText = number3; });
+        }
+
+        // Add an event listener for touchstart events on the document
+        document.addEventListener("touchstart", executeOnTouch);
